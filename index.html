@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Wordly Dictionary</h1>
+        <p>Your personal vocabulary companion</p>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2>Discover New Words</h2>
+
+            
+<form id="search-form">
+    <input
+        type="text"
+        id="word-input"
+        placeholder="Enter a word"
+        aria-label="Enter a word to search"
+    >
+
+    <button type="submit">Search</button>
+
+    <button type="button" id="clear-search-button">
+        Clear Search
+    </button>
+</form>
+
+
+                
+        </section>
+
+        
+<section id="message-section" aria-live="polite">
+    <p id="status-message"></p>
+
+    <div id="loading-indicator" hidden>
+        <div class="spinner"></div>
+        <p>Searching for the word...</p>
+    </div>
+</section>
+
+<section id="result-section"></section>
+
+
+
+        
+<section id="history-section">
+    <h2>Recent Searches</h2>
+    <ul id="search-history"></ul>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Wordly Dictionary</p>
+    </footer>
+
+</body>
+</html>
